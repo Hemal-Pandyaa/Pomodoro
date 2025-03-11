@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pomodoro time - Boost focus by 10x</title>
+</head>
+<body class="background">
+    <main class="dark-background container">
+        <div class="flex">
+            <div class="timer">25:00</div>
+            <div class="options">
+                <button class="play button"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                    Play
+                </button>
+                <button class="pause button hidden"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+                        <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>
+                      </svg>
+                    Pause
+                </button>
+                <button class="reset button">
+                    Reset
+                </button>
+
+            </div>
+        </div>
+
+    </main>
+    <div class="dialogue">
+        
+    </div>
+    <div class="flex set-timer">
+        <div class="time-container">
+            <div class="minutes input">
+                <p>Minutes</p>
+                <input type="number" id="minutes" min="0" max="999">
+            </div>
+            <div class="seconds input">
+                <p>seconds</p>
+                <input type="number" id="seconds" min="0" max="59">
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
