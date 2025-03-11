@@ -49,7 +49,7 @@
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 
@@ -102,4 +102,27 @@
 .time-container{
     display: flex;
     flex-direction: row;
+    margin: auto 50px;
+    
+}
+
+.input > *{
+    margin: 20px 12px 5px 12px;
+}
+
+.submit {
+    margin: auto;
+}
+
+.submit-button{
+    background-color: rgb(249, 71, 71);
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+}
+
+.submit-button:hover{
+    background-color: rgb(165, 42, 42);
 }
